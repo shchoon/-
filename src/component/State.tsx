@@ -3,8 +3,8 @@ import { useState } from "react";
 import "../css/state.css";
 
 export default function State() {
-  const [isAble, setIsAble] = useState(false);
-  const [isToolTip, setIsToopTip] = useState(false);
+  const [isAble, setIsAble] = useState<boolean>(false);
+  const [isToolTip, setIsToopTip] = useState<boolean>(false);
 
   const stateBtnStyle = {
     background: isAble ? "gray" : "black",
@@ -19,7 +19,7 @@ export default function State() {
           setIsAble((prev) => !prev);
         }}
       >
-        {isAble ? "able" : "disable"}
+        {isAble ? "enable" : "disable"}
       </button>
       <button
         className="toolTip_target"

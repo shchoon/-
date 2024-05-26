@@ -1,6 +1,7 @@
-import ToolTipTop from "../common/ToolTipTop";
-import "../../css/timer.css";
 import { useState } from "react";
+import ToolTipTop from "../common/ToolTipTop";
+
+import "../../css/timer.css";
 
 interface IProps {
   time: number;
@@ -8,17 +9,12 @@ interface IProps {
 
 export default function LeaveDelay({ time }: IProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
-  let timer: NodeJS.Timeout | null = null;
+  let timer: ReturnType<typeof setTimeout> = null;
   const toolTipData = {
     title: "leave-delay",
     className: "leave_delay",
     arrowClass: "leave_arrow",
     behavior: "leave",
-  };
-
-  const boxStyle = {
-    backgroundColor: isHover ? "gray" : "blue",
-    transition: isHover && "background-color 1s",
   };
 
   const startTimer = () => {
@@ -38,7 +34,6 @@ export default function LeaveDelay({ time }: IProps) {
   return (
     <button
       className="enter_box"
-      style={boxStyle}
       onMouseOver={() => {
         stopTimer();
       }}

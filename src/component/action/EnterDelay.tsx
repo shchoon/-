@@ -8,16 +8,11 @@ interface IProps {
 
 export default function EnterDelay({ time }: IProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
-  let timer: NodeJS.Timeout | null = null;
+  let timer: ReturnType<typeof setTimeout> = null;
   const toolTipData = {
     title: "enter-delay",
     className: "enter_delay",
     arrowClass: "enter_arrow",
-  };
-
-  const boxStyle = {
-    backgroundColor: isHover ? "gray" : "blue",
-    transition: isHover && "background-color 1s",
   };
 
   const startTimer = () => {
@@ -30,19 +25,20 @@ export default function EnterDelay({ time }: IProps) {
     setIsHover(false);
     if (timer) {
       clearTimeout(timer);
-      timer = null; // 타이머 변수 초기화
     }
+    timer = null;
   };
 
   return (
     <button
       className="enter_box"
-      style={boxStyle}
       onMouseEnter={() => {
         startTimer();
+        console.log(timer);
       }}
       onMouseLeave={() => {
         stopTimer();
+        console.log(timer);
       }}
     >
       {toolTipData.title} {time}s

@@ -11,6 +11,7 @@ export default function Custom() {
       {color.map((color, i) => {
         return (
           <button
+            key={i}
             style={{ background: `${color}` }}
             onMouseEnter={() => {
               setTargetId(i);

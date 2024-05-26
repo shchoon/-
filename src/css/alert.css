@@ -11,6 +11,7 @@
     width: 300px;
     height: 50px;
     background: wheat;
+    text-align: center;
 }
 .alert_box button {
     width: 70px;
@@ -18,6 +19,7 @@
     border: none;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 .alert_box {
     position: absolute;
@@ -114,110 +116,3 @@
     left: 50%;
     transform: translateX(-50%);
 }
-/* .alert_container {
-    width: 300px;
-    height: 50px;
-    background: violet;
-}
-
-.alert_box {
-    position: absolute;
-    top: 700px;
-    left: 500px;
-    display: flex;
-    gap: 50px;
-    height: 150px;
-}
-
-.alert_left_box button, .alert_right_box button {
-    width: 80px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-}
-
-.alert_vertical {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-.alert_vertical button {
-    width: 80px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-}
-
-.alert_left_box, .alert_right_box {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.alert_main_top {
-    width: 300px;
-    height: 100px;
-    background: #0dcaf0;
-    color: gray;
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.alert_main_bottom {
-    width: 300px;
-    height: 100px;
-    background: #0dcaf0;
-    color: gray;
-    position: absolute;
-    bottom: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-
-.alert_left {
-    position: absolute;
-    display: flex;
-    left: -310px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.alert_arrow_left, .alert_arrow_right {
-    height: 100px;
-    align-content: center;
-}
-
-.alert_right {
-    position:  absolute;
-    display: flex;
-    right: -310px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.alert_arrow_up {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.alert_arrow_down {
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-} */

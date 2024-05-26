@@ -8,7 +8,7 @@ interface IProps {
 
 export default function AlertTop({ showAlert }: IProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
-  let timer: NodeJS.Timeout | null = null;
+  let timer: ReturnType<typeof setTimeout> = null;
 
   const startTimer = () => {
     timer = setTimeout(() => {
@@ -20,7 +20,7 @@ export default function AlertTop({ showAlert }: IProps) {
     setIsHover(true);
     if (timer) {
       clearTimeout(timer);
-      timer = null; // 타이머 변수 초기화
+      timer = null;
     }
   };
 

@@ -3,10 +3,9 @@ import "./App.css";
 import Normal from "./component/Noraml";
 import Scroll from "./component/Scroll";
 import Timer from "./component/Timer";
-import Alert from "./component/Alert";
+import Modal from "./component/Modal";
 import Custom from "./component/Custom";
 import State from "./component/State";
-import ToolTip from "./component/common/ToolTip";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <Normal />
       <Scroll />
       <Timer />
-      <Alert />
+      <Modal />
       <Custom />
       <State />
     </div>

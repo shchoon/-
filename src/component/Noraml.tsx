@@ -25,6 +25,7 @@ export default function Normal() {
 
   const initiailizeTarget = () => {
     setToolTipTarget((prev) => ({
+      ...prev,
       x: 0,
       y: 0,
       targetDirection: "",

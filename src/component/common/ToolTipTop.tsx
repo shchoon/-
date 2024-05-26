@@ -2,6 +2,7 @@ import { FaCaretDown } from "react-icons/fa";
 import "../../css/Normal/ToolTip/NormalTop.css";
 import "../../css/Scroll/ToolTip/ScrollTop.css";
 import "../../css/timer.css";
+
 interface IProps {
   toolTipClass: string;
   arrowClass: string;

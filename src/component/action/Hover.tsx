@@ -1,6 +1,7 @@
-import ToolTipTop from "../common/ToolTipTop";
-import "../../css/timer.css";
 import { useState } from "react";
+import ToolTipTop from "../common/ToolTipTop";
+
+import "../../css/timer.css";
 
 interface IProps {
   time: number;
@@ -8,7 +9,7 @@ interface IProps {
 
 export default function Hover({ time }: IProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
-  let timer: NodeJS.Timeout | null = null;
+  let timer: ReturnType<typeof setTimeout> = null;
   const toolTipData = {
     title: "hover-not-hidden",
     className: "hover_not_hidden",
