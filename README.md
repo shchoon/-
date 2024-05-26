@@ -6,14 +6,14 @@
 • 실행 방법
 - 저장소 클론
   -- bash
-  git clone ~~~
-  cd my-app
+  git clone https://github.com/shchoon/codingTest.git
+  cd codingTest
 
 - 의존성 패기지 설치 (terminal)
-  npm install (/my-app)
+  npm install (/codingTest)
 
 - 파일 실행
-  npm start (/my-app)
+  npm start (/codingTest)
 
 • 구현 로직
 
@@ -24,13 +24,14 @@
 - state의 targetDirection의 값이 빈 문자열인지 여부에 따라 툴팁이 보여짐
 
 2. ToolTip on Scroll
+- max-width, max-height, overflow: scroll로 스크롤 UI 구현   
 - getBoundingClientRect()의 x, y 를 기반으로 toolTip의 위치 설정
 - 버튼 안으로 커서가 들어오면 onMouseEnter 함수를 통해 {x: number, y: number, targetDirection: string} 타입의 state를 변경
 - 버튼 밖으로 커서가 벗어나면 onMouseLeave 함수를 통해 {x: number, y: number, targetDirection: string} 타입의 state가 초기화
 - state의 targetDirection의 값이 빈 문자열인지 여부에 따라 툴팁이 보여짐
 
 3. Delay toolTip
-- 버튼 안으로 커서가 들어모면 onMouseEnter 함수를 통해 timer 라는 변수에 setTimeOut 함수를 할당해주고 지정한 시간이 지나면 툴팁의 보여짐 여부를 판단하는 state 변경
+- 버튼 안으로 커서가 들어모면 onMouseEnter 함수를 통해 timer 라는 변수에 setTimeOut 함수를 할당해주고 지정한 시간이 지나면 툴팁의 활성화 여부를 판단하는 state 변경
 - 버튼 밖으로 커서가 벗어나면 onMouseLeave 함수를 통해 state 값을 변경하고 clearTimeOut(timer)로 setTimeOut를 취소하고 다시 timer을 null로 초기화
 - setTimeOut의 시간은 props로 넘긴 값을 사용하여 사용자가 설정할 수 있게 구현 ( ex) 1초면 1, 2초면 2로 props를 설정할 수 있음 )
 - 툴팁의 보여짐 여부를 판단하는 state가 true면 툴팁이 보여지고 false이면 툴팁이 사라짐
