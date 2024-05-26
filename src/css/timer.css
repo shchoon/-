@@ -1,0 +1,99 @@
+.timer_box {
+    position:  absolute;
+    left: 200px;
+    top: 500px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enter_box, .leave_box, .hover_box {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enter_delay {
+    position: absolute;
+    bottom: 37px;
+}
+.enter_arrow {
+    position:  absolute;
+    left: 10px;
+    bottom: 30px;
+}
+
+.leave_delay {
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leave_arrow {
+    position:  absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover_not_hidden {
+    position: absolute;
+    bottom: 37px;
+    right: 10px;
+}
+
+.hover_arrow {
+    position:  absolute;
+    bottom: 30px;
+    right: 20px;
+}
+/* .timer_box > button {
+    position: relative;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enter_delay {
+    position: absolute;
+    bottom: 37px;
+}
+
+.enter_arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+
+.leave_delay {
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leave_arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover_not_hidden {
+    position: absolute;
+    bottom: 37px;
+    right: 10px;
+}
+
+.hover_arrow {
+    position:  absolute;
+    bottom: 30px;
+    right: 20px;
+} */

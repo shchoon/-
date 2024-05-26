@@ -1,0 +1,52 @@
+.scroll_TopLeft {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 605px;
+    left: 305px;
+}
+
+.scroll_TopCenter {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 605px;
+    left: 410px;
+}
+
+.scroll_TopRight {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 605px;
+    left: 520px;
+}
+.scrollArrow_TopLeft {
+    position: absolute;
+    top: 680px;
+    left: 310px;
+}
+
+.scrollArrow_TopCenter {
+    position: absolute;
+    top: 680px;
+    left: 455px;
+}
+
+.scrollArrow_TopRight {
+    position: absolute;
+    top: 680px;
+    left: 600px;
+}
+.toolTip_box {
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}

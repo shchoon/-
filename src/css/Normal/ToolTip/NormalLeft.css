@@ -1,0 +1,46 @@
+.normal_LeftTop {
+    display: flex;
+    position: absolute;
+    left: -110px;
+    top: 0;
+}
+
+.normal_LeftMiddle {
+    display: flex;
+    position: absolute;
+    left: -110px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.normal_LeftBottom {
+    display: flex;
+    position: absolute;
+    left: -110px;
+    bottom: 0;
+}
+.normalArrow_HorizonTop {
+    height: 80px;
+    align-content: start;
+}
+.normalArrow_HorizonMiddle {
+    height: 80px;
+    align-content: center;
+}
+.normalArrow_HorizonBottom {
+    height: 80px;
+    align-content: end;
+}
+.arrow_horizon {
+    width: 5px;
+    height: 20px;
+}
+.toolTip_box {
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}

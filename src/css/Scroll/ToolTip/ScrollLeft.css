@@ -1,0 +1,36 @@
+.scroll_LeftTop {
+    display: flex;
+}
+
+.scroll_LeftMiddle {
+    display: flex;
+}
+
+.scroll_LeftBottom {
+    display: flex;
+}
+.scrollArrow_HorizonTop {
+    height: 80px;
+    align-content: start;
+}
+.scrollArrow_HorizonMiddle {
+    height: 80px;
+    align-content: center;
+}
+.scrollArrow_HorizonBottom {
+    height: 80px;
+    align-content: end;
+}
+.arrow_horizon {
+    width: 5px;
+    height: 20px;
+}
+.toolTip_box {
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+.custom_box {
+    position: absolute;
+    top: 800px;
+    left: 200px;
+    display: flex;
+    gap: 30px;
+}
+
+.custom_box button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    align-content: center;
+}
+
+.custom_toolTip {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}

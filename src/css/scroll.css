@@ -1,0 +1,59 @@
+.scroll_box {
+    max-width: 550px;
+    max-height: 150px;
+    overflow: scroll;
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+}
+
+.scroll_box button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* position: relative; */
+  }
+
+.left , .right {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left > .container , .right > .container  {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.horizontal {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom > .container {
+    height: 30px;
+}
+
+
+
+
