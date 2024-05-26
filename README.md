@@ -5,7 +5,6 @@
   
 • 실행 방법
 - 저장소 클론
-  -- bash
   git clone https://github.com/shchoon/codingTest.git
   cd codingTest
 
