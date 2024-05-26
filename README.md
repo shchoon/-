@@ -6,7 +6,7 @@
 • 실행 방법
 - 저장소 클론
   git clone https://github.com/shchoon/codingTest.git
-  cd codingTest
+  -> cd codingTest
 
 - 의존성 패기지 설치 (terminal)
   npm install (/codingTest)
